@@ -8,9 +8,9 @@
 public class homework_2_task1 {
     public static void main(String[] args) {
         System.out.print("SELECT * from students ");
-        System.out.println(homework_2_libr.sqlFilterFormer("{name:Ivanov, country:Russia, city:Moscow, age:null}"));
+        System.out.println(homework_3_libr.sqlFilterFormer("{name:Ivanov, country:Russia, city:Moscow, age:null}"));
         System.out.print("SELECT * from students ");
-        System.out.println(homework_2_libr.sqlFilterFormer("{name:Petrov, country:null, city:S.Peterburg, age:25}"));
+        System.out.println(homework_3_libr.sqlFilterFormer("{name:Petrov, country:null, city:S.Peterburg, age:25}"));
     }
 
 

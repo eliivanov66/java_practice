@@ -17,19 +17,19 @@ public class homework_2_task4 {
 
         System.out.println("========== Простой калькулятор ===========");
 
-        LeftValue = homework_2_libr.MyUserInputDouble("Введите первое число: ");
-        RightValue = homework_2_libr.MyUserInputDouble("Введите второе число: ");
+        LeftValue = homework_3_libr.MyUserInputDouble("Введите первое число: ");
+        RightValue = homework_3_libr.MyUserInputDouble("Введите второе число: ");
 
         int UserInput = 0;
         while ((UserInput < 1) || (UserInput > 4)) {
             System.out.println(String.format("Вы ввели числа %f и %f", LeftValue, RightValue));
-            homework_2_libr.myLoggerWriter(fHandler, Level.INFO, String.format("Человек ввёл числа %f и %f", LeftValue, RightValue));
+            homework_3_libr.myLoggerWriter(fHandler, Level.INFO, String.format("Человек ввёл числа %f и %f", LeftValue, RightValue));
             System.out.println("Выберите действия над этими числами: ");
             System.out.println("1 - найти сумму этих чисел               : + ");
             System.out.println("2 - найти разницу этих чисел             : - ");
             System.out.println("3 - найти произведение этих чисел        : *");
             System.out.println("4 - найти частное этих чисел             : /");
-            UserInput = homework_2_libr.MyUserInputInt("Ваш выбор: ");
+            UserInput = homework_3_libr.MyUserInputInt("Ваш выбор: ");
         }
 
         switch (UserInput) {
@@ -59,7 +59,7 @@ public class homework_2_task4 {
                 }
                 break;
         }
-        homework_2_libr.myLoggerWriter(fHandler, Level.INFO, String.format("Результат %s чисел %f и %f равен %s", Operation, LeftValue, RightValue, ResultValueStr));
+        homework_3_libr.myLoggerWriter(fHandler, Level.INFO, String.format("Результат %s чисел %f и %f равен %s", Operation, LeftValue, RightValue, ResultValueStr));
         System.out.println(String.format("Результат %s чисел %f и %f равен %s", Operation, LeftValue, RightValue, ResultValueStr));
     }
 
