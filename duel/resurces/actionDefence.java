@@ -1,4 +1,4 @@
-package java_practice.duel;
+package resurces;
 
 public interface actionDefence {
     abstract void defence(hero arg, int value);

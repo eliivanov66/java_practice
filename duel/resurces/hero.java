@@ -1,4 +1,4 @@
-package java_practice.duel;
+package resurces;
 import java.util.Random;
 
 public abstract class hero implements actionDefence, actionDying, actionHealing{
@@ -14,6 +14,7 @@ public abstract class hero implements actionDefence, actionDying, actionHealing{
     int wisdom; //от него зависит количество MP
     int level; //уровень персонажа
     int XP; //опыт
+    boolean isDead = false;
     Random dice = new Random();
     int avaiblePoints = 21;
     public hero(String argName, int HP, int MP){
@@ -22,6 +23,7 @@ public abstract class hero implements actionDefence, actionDying, actionHealing{
         this.HP = HP;
         this.MP = MP;
         this.XP = 0;
+        this.maxHP = this.HP;
     }
     public hero(){
         this("герой", 10, 5);
@@ -33,7 +35,8 @@ public abstract class hero implements actionDefence, actionDying, actionHealing{
     @Override
     public void defence(hero arg, int value) {
         arg.HP -= value;
-        System.out.printf("Персонаж %s получает урон %d", this.name, value);
+        System.out.printf("Персонаж %s получает урон %d\n", this.name, value);
+        info();
         if (arg.HP <=0) {
             dying(this);
         }
@@ -41,18 +44,23 @@ public abstract class hero implements actionDefence, actionDying, actionHealing{
 
     @Override
     public void dying(hero arg) {
-        System.out.printf("Персонаж %s умирает", this.name);
-        arg = null;
+        System.out.printf("Персонаж %s умирает\n", this.name);
+        isDead = true;;
     }
     
     @Override
     public void healing(hero arg, int value) {
         arg.HP += value;
-        System.out.printf("Персонаж %s получает лечение %d", this.name, value);
         if (arg.HP > arg.maxHP) arg.HP = arg.maxHP;
+        System.out.printf("Персонаж %s получает лечение %d\n", this.name, value);
+        info();
     }
 
     public void info(){
-        System.out.printf("Персонаж %s состояние %d/%d", this.name, this.HP, this.maxHP);
+        System.out.printf("Персонаж %s состояние %d/%d \n", this.name, this.HP, this.maxHP);
+    }
+
+    public boolean dead(){
+        return this.isDead;
     }
 }

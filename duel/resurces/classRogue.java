@@ -1,4 +1,4 @@
-package java_practice.duel;
+package resurces;
 
 public class classRogue extends hero implements actionMeleeAttack, actionRangedAttack {
     public classRogue(String name) {
@@ -6,27 +6,27 @@ public class classRogue extends hero implements actionMeleeAttack, actionRangedA
         
         this.avaiblePoints = 22;
         
-        this.stamina = dice.nextInt(12, 12 + this.avaiblePoints);
+        this.stamina = this.dice.nextInt(12, 13 + this.avaiblePoints);
         avaiblePoints -= this.stamina;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
         
-        this.dexteny = dice.nextInt(12, 12 + this.avaiblePoints);
+        this.dexteny = this.dice.nextInt(12, 13 + this.avaiblePoints);
         avaiblePoints -= this.dexteny;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
 
-        this.strenght = dice.nextInt(8, 8 + this.avaiblePoints);
+        this.strenght = this.dice.nextInt(8, 9 + this.avaiblePoints);
         this.avaiblePoints -= this.strenght;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
         
-        this.intellect = dice.nextInt(4, 4 + this.avaiblePoints);
+        this.intellect = this.dice.nextInt(4, 5 + this.avaiblePoints);
         avaiblePoints -= this.intellect;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
         
-        this.charisma = dice.nextInt(4, 4 + this.avaiblePoints);
+        this.charisma = this.dice.nextInt(4, 5 + this.avaiblePoints);
         avaiblePoints -= this.charisma;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
         
-        this.wisdom = dice.nextInt(4, 4 + this.avaiblePoints);
+        this.wisdom = this.dice.nextInt(4, 5 + this.avaiblePoints);
         avaiblePoints -= this.wisdom;
         if (this.avaiblePoints<0) this.avaiblePoints = 0;
 
@@ -46,13 +46,13 @@ public class classRogue extends hero implements actionMeleeAttack, actionRangedA
     @Override
     public int meleeAttack(hero arg) {
         int temp = (this.strenght/4) * this.dice.nextInt(0,7);
-        System.out.printf("Персонаж %s наносит урон ближним боем %d", this.name, temp );
+        System.out.printf("Персонаж %s наносит урон ближним боем %d\n", this.name, temp );
         return temp; 
     }
     @Override
     public int rangedAttack(hero arg) {
         int temp =  (this.dexteny/4) * this.dice.nextInt(0,7);
-        System.out.printf("Персонаж %s наносит урон дальним боем %d", this.name, temp );
+        System.out.printf("Персонаж %s наносит урон дальним боем %d\n", this.name, temp );
         return temp; 
     }
 }
