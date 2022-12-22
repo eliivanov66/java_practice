@@ -7,7 +7,7 @@ public class program {
         pplCount = 5; //количество людей
         ArrayList<person> persons = new ArrayList<person>();
         for (int i = 0; i < pplCount; i++) {
-            person tempPerson = new person(3);
+            person tempPerson = new person(5);
             persons.add(tempPerson);
         }
         int count = 1;
