@@ -18,7 +18,7 @@ public class treeUI implements ui {
         while (badDataIn) {
             badDataIn = false;
             dataOut(msg);
-            Scanner data = new Scanner(System.in);
+            Scanner data = new Scanner(System.in, "Cp866");
             try {
                 data = new Scanner(System.in);
                 if (typeRetValue == Boolean.class) {
