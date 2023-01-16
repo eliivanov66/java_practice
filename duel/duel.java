@@ -1,5 +1,3 @@
-package java_practice.duel;
-
 import java.util.Random;
 import resurces.classCleric;
 import resurces.classRogue;
