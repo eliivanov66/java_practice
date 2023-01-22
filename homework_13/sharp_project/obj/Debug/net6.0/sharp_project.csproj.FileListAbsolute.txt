@@ -1,0 +1,15 @@
+D:\Python\java_practice\homework_13\sharp_project\bin\Debug\net6.0\sharp_project.exe
+D:\Python\java_practice\homework_13\sharp_project\bin\Debug\net6.0\sharp_project.deps.json
+D:\Python\java_practice\homework_13\sharp_project\bin\Debug\net6.0\sharp_project.runtimeconfig.json
+D:\Python\java_practice\homework_13\sharp_project\bin\Debug\net6.0\sharp_project.dll
+D:\Python\java_practice\homework_13\sharp_project\bin\Debug\net6.0\sharp_project.pdb
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.csproj.AssemblyReference.cache
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.AssemblyInfoInputs.cache
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.AssemblyInfo.cs
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.csproj.CoreCompileInputs.cache
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.dll
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\refint\sharp_project.dll
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.pdb
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\sharp_project.genruntimeconfig.cache
+D:\Python\java_practice\homework_13\sharp_project\obj\Debug\net6.0\ref\sharp_project.dll

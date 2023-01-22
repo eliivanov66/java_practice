@@ -1,0 +1,10 @@
+<xml>
+<Contact>contact#1</Contact><SecondName>Лаврентьева</SecondName><FirstName>Феодора</FirstName><Comment>commentary for contact#1</Comment><Phone>89087934</Phone>
+<Contact>contact#2</Contact><SecondName>Русакова</SecondName><FirstName>Аза</FirstName><Comment>commentary for contact#2</Comment><Phone>89312681</Phone>
+<Contact>contact#4</Contact><SecondName>Тихонов</SecondName><FirstName>Пётр</FirstName><Comment>commentary for contact#4</Comment><Phone>89645269</Phone><Phone>89847959</Phone><Phone>89479411</Phone><Phone>89117627</Phone>
+<Contact>contact#5</Contact><SecondName>Сорокин</SecondName><FirstName>Федот</FirstName><Comment>commentary for contact#5</Comment><Phone>89519359</Phone><Phone>89202789</Phone><Phone>89821693</Phone><Phone>89905866</Phone>
+<Contact>contact#6</Contact><SecondName>Ковалёв</SecondName><FirstName>Мирослав</FirstName><Comment>commentary for contact#6</Comment><Phone>89771539</Phone><Phone>89402862</Phone><Phone>89917608</Phone><Phone>89223053</Phone>
+<Contact>contact#7</Contact><SecondName>Петухов</SecondName><FirstName>Вадим</FirstName><Comment>commentary for contact#7</Comment><Phone>89091309</Phone><Phone>89246606</Phone>
+<Contact>contact#8</Contact><SecondName>Кудрявцева</SecondName><FirstName>Глафира</FirstName><Comment>commentary for contact#8</Comment><Phone>89542826</Phone><Phone>89038324</Phone><Phone>89500403</Phone>
+<Contact>contact#9</Contact><SecondName>Борисов</SecondName><FirstName>Аникита</FirstName><Comment>commentary for contact#9</Comment><Phone>89783123</Phone>
+</xml>
