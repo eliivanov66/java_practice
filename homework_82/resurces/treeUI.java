@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class treeUI implements ui {
+public class treeUI implements Ui {
     static int levelUI = 0; 
 
     public person newPersonInput(){

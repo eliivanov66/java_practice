@@ -1,0 +1,21 @@
+javac - утилита компилирующая код джавы в байт-код, исполняемый JVM
+    javac Main.java //создаст класс Main.class
+    java Main //запустит приложение
+
+    javac -sourcepath ./src -d out src/ru/gb/jcore/sample/Main.java //компиляция
+    java -classpath ./out src/ru/gb/jcore/sample/Main
+
+    javadoc - создаёт документацию для проекта
+        -d docs //папка куда попадает документация
+        -sourcepath src //папка с исходниками, в которых есть документированные комментарии
+        -cp out //папка, в которой лежат скомпилированные классы, только те что там попадают в документацию
+        -subpackages //указывает что все пакеты, импортированные в код, так же будут задокументированы
+        ru //верхний уровень пакета, для которого будет сделана документация
+
+        javadoc -d docs -sourcepath src -cp out -subpackages ru
+            -localc ru_RU
+            -encoding utf-8
+            -docencoding cp1251
+        
+        make //утилита, которая использует makefiles, в которых описываются пути и переменные для компиляции
+            
