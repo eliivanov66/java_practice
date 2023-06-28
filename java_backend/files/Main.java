@@ -37,10 +37,6 @@ public class Main {
             UI.out("Login not existed, created new");
         } else {
             String readedHashPassword = BD.read(lineNumber).split(" ") [1];
-            
-            UI.out(hashPassword);
-            UI.out(readedHashPassword);
-
             if (hashPassword.equals(readedHashPassword)) {
                 UI.out("Login found, password accepted");
             } else {
