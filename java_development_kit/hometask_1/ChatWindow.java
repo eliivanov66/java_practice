@@ -1,6 +1,8 @@
 package java_development_kit.hometask_1;
 
 import javax.swing.*;
+import javax.swing.text.DefaultCaret;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -55,6 +57,8 @@ public class ChatWindow extends JFrame {
         //инициализация поля вывода
         outputField.enableInputMethods(false);
         outputField.setBackground(Color.LIGHT_GRAY);
+
+
         StringBuilder builder = new StringBuilder();
         for (String string : logHandler.Read()) {
             builder.append(string);
