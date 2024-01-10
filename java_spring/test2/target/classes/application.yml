@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Demo spring app
+  profiles:
+    default: production
+#  config:
+#    activate: development
+#---
+#spring:
+#  profiles: development
+#server:
+#  port: 9090
+#---
+#spring:
+#  profiles: production
+#server:
+#  port: 9093
