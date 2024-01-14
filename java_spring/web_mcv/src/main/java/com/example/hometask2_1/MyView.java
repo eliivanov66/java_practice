@@ -1,10 +1,11 @@
 package com.example.web_mcv;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
-@Component
+@Service
 public class MyView {
     private static final String HTML_HEAD ="<head> <meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><link rel='stylesheet' href='/style.css'> <title>Document</title> </head>";
     private static final String HTML_START="<html><body> <header><h2>My view application</h2></header>";
